@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-os-OX6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c4-pu-Xfj">
+                                <rect key="frame" x="157" y="155" width="100" height="44"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.99215686270000003" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="MCJ-JH-oAx"/>
+                                    <constraint firstAttribute="height" constant="44" id="vfY-bj-np3"/>
+                                </constraints>
+                                <state key="normal" title="Tap to Start">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.37254901959999998" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDE-kb-HbK"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-WB-fjb">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="gcZ-gW-hT1"/>
+                                    <constraint firstAttribute="width" constant="20" id="zNM-8E-FoX"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M32-8j-JZI" customClass="BottomView" customModule="Test1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="734" width="414" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRv-Cy-2GR">
+                                        <rect key="frame" x="16" y="44" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="bQW-4G-FF4" appends="YES" id="HgW-eG-V9L"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xPO-nr-XnB">
+                                        <rect key="frame" x="358" y="44" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.37254901959999998" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="l7e-YF-GtO" appends="YES" id="8ty-G6-5MB"/>
+                                        </connections>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRN-gh-lv1">
+                                        <rect key="frame" x="132" y="42" width="150" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Capture">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="captureTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a70-lk-WVp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="capture" destination="pRN-gh-lv1" id="oZE-tQ-idq"/>
+                                    <outlet property="leftImgView" destination="lRv-Cy-2GR" id="lCI-HL-yeT"/>
+                                    <outlet property="rightImgView" destination="xPO-nr-XnB" id="HGK-Nl-jcU"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BI5-os-OX6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1Cs-k7-VtO"/>
+                            <constraint firstItem="7TS-WB-fjb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DYw-qI-YsQ"/>
+                            <constraint firstItem="9c4-pu-Xfj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kdg-ih-DpU"/>
+                            <constraint firstItem="BI5-os-OX6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OUz-vf-FQI"/>
+                            <constraint firstItem="BI5-os-OX6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W6x-cf-i6O"/>
+                            <constraint firstItem="BI5-os-OX6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ZzT-o8-z4K"/>
+                            <constraint firstItem="7TS-WB-fjb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kTN-RS-hKf"/>
+                            <constraint firstItem="9c4-pu-Xfj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="rEC-Lo-BNK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="M32-8j-JZI" id="1dF-sz-mwk"/>
+                        <outlet property="combinedImageView" destination="BI5-os-OX6" id="Pvl-XO-dHx"/>
+                        <outlet property="spinner" destination="7TS-WB-fjb" id="M48-sY-Dcu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bQW-4G-FF4" userLabel="leftImgTap">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="axc-7i-zWm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="l7e-YF-GtO" userLabel="rightImgTap">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="dYY-86-N5g"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="139" y="97"/>
+        </scene>
+    </scenes>
+</document>
